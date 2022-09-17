@@ -1,13 +1,11 @@
 addEventListener("DOMContentLoaded",()=>{
-    let Dkm=0, Tseg=0, Dmt=0, Thr=0
-    Dkm=Number(prompt("Ingrese la distancia recorrida por el automovil: "))
-    Tseg=Number(prompt("Ingrese el tiempo que gasto en dicho recorrido: "))
-    Dmt=(1000*Dkm)
-    Thr=(Tseg/3600)
-    let VMtS =(Dmt/Tseg)
-    let VkmHr=(Dkm/Thr)
-    console.log(`LA VELOCIDAD EN METROS POR SEGUNDO ES DE: ${VMtS}`)
-    console.log(`LA VELOCIDAD DE KILOMETROS POR HORA ES DE: ${VkmHr}`)
+    let P_or=0,Des=0.10
+    p_or=Number(prompt("Ingrese el valor del medicamento: "))
+    let= Vproduct=0,Vfinal=0
+    Vproduct=(P_or*Des)
+    Vfinal=(P_or-Vproduct)
+    console.log(`El valor orginial del producto es de: ${Vproduct}`)
+    console.log(`El valor final con descuento es de: ${Vfinal}`)
 
 
 })
