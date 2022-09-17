@@ -1,18 +1,16 @@
 addEventListener("DOMContentLoaded",()=>{
-let c1=0,c2=0,c3=0
-c1=Number(prompt("Ingrese la primera calificacion: "))
-c2=Number(prompt("Ingrese la segunda calificacion: "))
-c3=Number(prompt("Ingrese la tercera calificacion: "))
-let prom=0,exam=0,Trabajo=0
-prom=(c1+c2+c3)/3
-exam=Number(prompt("Ingrese la nota del examen: "))
-Trabajo=Number(prompt("Ingrese la calificacion del trabajo final: "))
+let p1=0,p2=0,p3=0
+p1=Number(prompt("Ingrese el valor del producto"))
+p2=Number(prompt("Ingrese el valor del producto"))
+p3=Number(prompt("Ingrese el valor del producto"))
 
-let final=0
-final=(prom*0.15+exam*0.10+Trabajo*0.5)
-
-console.log(`El promedio final de la materia del algoritmos es de: ${final}`)
-
+let sub=0,iva=0,Tl=0
+sub=(p1+p2+p3)
+iva=(sub*0.19)
+Tl=(sub+iva)
+console.log(`El subtotal es de: ${sub}`)
+console.log(`El valor con el iva  es de: ${iva}`)
+console.log(`El valor total es de: ${Tl}`)
 
 
 })
