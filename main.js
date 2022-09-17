@@ -1,10 +1,9 @@
 addEventListener("DOMContentLoaded",()=>{
-    let v1=3/4, pi=3.14, A=0,B=0,C=0
-    A=Number(prompt("Ingrese el valor de A: "))
-    B=Number(prompt("Ingrese el valor de B: "))
-    C=Number(prompt("Ingrese el valor de C: "))
-let volum=(v1*pi*A*B*C)
+    let min=0, iva=0
+    min=Number(prompt("Ingrese los minutos que la llamada ha durado: "))
 
-console.log(`EL VOLUMEN DEL ELIPSOIDE ES DE: ${volum}`)
+    iva=(min/100)
+    let cost=(min*iva)
+    console.log(`EL VALOR DE LA LLAMADA ES DE: ${cost}`)
 
 })
