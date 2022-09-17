@@ -1,8 +1,10 @@
 addEventListener("DOMContentLoaded",()=>{
-    let a=0,b=0,c=0,x=24,rta=0
-    a=Number(prompt("Ingresa el valor de a: "))
-    b=Number(prompt("Ingresa el segundo valor: "))
-    c=Number(prompt("Ingrese el valor de c: "))
-    rta=(a*Math.pow(x,2)+b*x+c)
-    console.log(`el resultado de la raiz es:${rta}` )
+    let v1=3/4, pi=3.14, A=0,B=0,C=0
+    A=Number(prompt("Ingrese el valor de A: "))
+    B=Number(prompt("Ingrese el valor de B: "))
+    C=Number(prompt("Ingrese el valor de C: "))
+let volum=(v1*pi*A*B*C)
+
+console.log(`EL VOLUMEN DEL ELIPSOIDE ES DE: ${volum}`)
+
 })
