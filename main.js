@@ -1,8 +1,6 @@
 addEventListener("DOMContentLoaded",()=>{
-    let km=0, min=0, vp=0
-    km=Number(prompt("Ingresa los kilometros que recorrio el proyectil"));
-    min=Number(prompt("Ingresa los minutos: "));
-    vp=(km/min)
-    console.log(`La velocidad del proyectil es de: ${vp}`)
-
+    let radio=0, v=4/3
+    radio=Number(prompt("Ingresa el radio de la esfera",3));
+    let vesfera=(v*3.14*radio**2);
+    console.log(`la respuesta es:  ${vesfera}`);
 })
