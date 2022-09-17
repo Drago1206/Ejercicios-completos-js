@@ -9,7 +9,7 @@ exam=Number(prompt("Ingrese la nota del examen: "))
 Trabajo=Number(prompt("Ingrese la calificacion del trabajo final: "))
 
 let final=0
-final=(prom+exam+Trabajo)
+final=(prom*0.15+exam*0.10+Trabajo*0.5)
 
 console.log(`El promedio final de la materia del algoritmos es de: ${final}`)
 
