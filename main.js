@@ -1,9 +1,13 @@
 addEventListener("DOMContentLoaded",()=>{
-    let min=0, iva=0
-    min=Number(prompt("Ingrese los minutos que la llamada ha durado: "))
+    let Dkm=0, Tseg=0, Dmt=0, Thr=0
+    Dkm=Number(prompt("Ingrese la distancia recorrida por el automovil: "))
+    Tseg=Number(prompt("Ingrese el tiempo que gasto en dicho recorrido: "))
+    Dmt=(1000*Dkm)
+    Thr=(Tseg/3600)
+    let VMtS =(Dmt/Tseg)
+    let VkmHr=(Dkm/Thr)
+    console.log(`LA VELOCIDAD EN METROS POR SEGUNDO ES DE: ${VMtS}`)
+    console.log(`LA VELOCIDAD DE KILOMETROS POR HORA ES DE: ${VkmHr}`)
 
-    iva=(min/100)
-    let cost=(min*iva)
-    console.log(`EL VALOR DE LA LLAMADA ES DE: ${cost}`)
 
 })
