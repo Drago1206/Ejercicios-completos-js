@@ -1,19 +1,18 @@
 addEventListener("DOMContentLoaded",()=>{
-let Hr=0,Pg=0
-Hr=Number(prompt("Ingrese las horas laboradas: "))
-Pg=Number(prompt("Ingrese su sueldo"))
+let A=0,B=0,C=0,D=0
+A=Number(prompt("Ingrese la nota del primer examen: ",3))
+B=Number(prompt("Ingrese la nota del segundo examen: ",3))
+C=Number(prompt("Ingrese la nota del tercer examen: ",3))
+D=Number(prompt("Ingrese la nota del cuarto examen: ",3))
 
-if(Hr>48){
-    extras=Hr-48
-    let sueldo=(48*Pg)
-    let extra=sueldo+(Hr*(Pg+Pg*0.5))
-    console.log(`El sueldo por 48 horas es de: ${Pg}`)
-    console.log(`Las horas extras trabajadas son de${Hr}`)
-    console.log(`El sueldo con la horas extras es de: ${extras}`)
-    console.log(`El sueldo es de: ${sueldo}`)
+let prom=(A+B+C+D)/4
+if(prom>=5){
+    alert("Aprobado")
+
 }else{
-    let Sueldo=Hr*Pg
-    console.log("El sueldo por ",Hr,"es de: ",Sueldo)
+    alert("Reprobado")
 }
+
+
 
 })
