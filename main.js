@@ -1,18 +1,14 @@
 addEventListener("DOMContentLoaded",()=>{
-let A=0,B=0,C=0,D=0
-A=Number(prompt("Ingrese la nota del primer examen: ",3))
-B=Number(prompt("Ingrese la nota del segundo examen: ",3))
-C=Number(prompt("Ingrese la nota del tercer examen: ",3))
-D=Number(prompt("Ingrese la nota del cuarto examen: ",3))
+let A=0,B=0,C=0,Sueldo=0
+A=Number(prompt("Ingresa la primera venta: "))
+B=Number(prompt("Ingresa la segunda venta: "))
+C=Number(prompt("Ingresa la tercera venta: "))
+Sueldo=Number(prompt("Ingresa el sueldo"))
 
-let prom=(A+B+C+D)/4
-if(prom>=5){
-    alert("Aprobado")
+let comision=(A+B+C)*0.10
+let total=(Sueldo+comision)
 
-}else{
-    alert("Reprobado")
-}
-
-
-
+console.log(`El sueldo del trabajador es de:  ${Sueldo}`)
+console.log(`La comision del mes por las tres ventas es de:  ${comision}`)
+console.log(`El sueldo ${total}`)
 })
