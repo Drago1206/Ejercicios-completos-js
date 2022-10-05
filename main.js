@@ -1,17 +1,16 @@
 addEventListener("DOMContentLoaded",()=>{
-   // 23. Calcular la edad de una madre en el momento de dio a luz a alguno de sus hijos.
-    // • Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un
-    // depósito.
-    // • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
-    // • Volumen = PI *(radio^2)* H (altura del depósito)
-    // • El tiempo se encuentra en minutos.
-    // • Normalmente se mide el volumen en litros y el tiempo en segundos.
-document.write(`23.Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un depósito.<br>`)
-    let radio=0,altura=0,tiempo=0
-        radio = Number(prompt(`Ingrese el valor del radio`))
-        altura = Number(prompt(`Ingrese el valor de la altura`))
-        tiempo = Number(prompt(`Ingrese el valor del tiempo`))
-    let volumen = (Math.PI)*(radio**2)*altura
-    let caudal = volumen*tiempo
-    document.write(`El valor del caudal  ${caudal}`)
+// 4. Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por
+    // $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le
+    // sobran $91000. ¿cuánto dinero tenía?
+    document.write(`24. Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?<br>`)
+    let hex=0,bomba=0,caja=0,sobrante=0
+    hex = 11500
+    bomba = 1168000
+    caja = 87000
+    sobrante = 91000
+    let C_hex=0,C_caja=0,total=0
+    C_hex = hex*5
+    C_caja = caja*3
+    total = sobrante+C_caja+C_hex+bomba
+    document.write(`el total de dinero que tenia es de:  ${total}`);
 })
