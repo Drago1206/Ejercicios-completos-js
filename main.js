@@ -1,12 +1,13 @@
 addEventListener("DOMContentLoaded",()=>{
-    // 7. tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma
-    // 2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a
-    // Lorena?
-    document.write(`27. tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma 2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a Lorena?<br>`)
-    let Martin=2/3,Jairo=1/4,Lorena=1/1,suma=0
-    suma=(Martin+Jairo)
-    let coresponde=(Lorena-suma)
-document.write(`Jairo y Martin tiene un total de: ${suma}<br>`)
-document.write(`A lorena le corresponde  un total de: ${coresponde}<br>`)
+    //     8. Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
+    // se cobra por m2 y realiza el código que representa el algoritmo que le permite ir mejorando
+    // presupuestos para cada cliente.
+    document.write(`28. Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. `) 
+let m2=0,precio=0
+m2=Number(prompt("Ingrese el precio a pintar en m2: "))
+precio=Number(prompt("Ingrese el precio por m2: "))
+let total=(m2*precio)
+document.write(`El total en pesos colombianos es de: ${total}`)
+
 
 })
