@@ -1,13 +1,18 @@
 addEventListener("DOMContentLoaded",()=>{
-    //     8. Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que
-    // se cobra por m2 y realiza el código que representa el algoritmo que le permite ir mejorando
-    // presupuestos para cada cliente.
-    document.write(`28. Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. `) 
-let m2=0,precio=0
-m2=Number(prompt("Ingrese el precio a pintar en m2: "))
-precio=Number(prompt("Ingrese el precio por m2: "))
-let total=(m2*precio)
-document.write(`El total en pesos colombianos es de: ${total}`)
+    //9. Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,
+    //pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código
+    //que representen el algoritmo para solucionar este problema.
+    //Al final debe entregar el nombre de la persona entrevistada en mayúscula sostenida y minunscula
+    //sostenida y la edad del entrevistado.
+    let nom=" ",edad=0,person=0
+    person=Number(prompt("Ingrese la cantidad de personas que desea determinar su edad: "))
+    let i=0
+    while(i<=person){
+        i++
+        nom=prompt("Ingrese el nombre de la persona: ")
+        edad=Number(prompt("Ingrese el año de nacimiento de la persona : "))
 
-
+        let edper=(2022-edad)
+        document.write(`${nom} tiene: ${edper}<br>`)
+    }
 })
